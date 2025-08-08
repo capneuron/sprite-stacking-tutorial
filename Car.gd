@@ -10,4 +10,4 @@ func _physics_process(delta):
 	velocity = lerp(velocity, input * SPEED, ACCELERATION * delta)
 	move_and_slide()
 	if input != Vector2.ZERO:
-		$StackedSprite.set_stack_rotate(velocity.angle() - deg_to_rad(90))
+		$StackedSprite.set_sprites_rotation(velocity.angle() - deg_to_rad(90))
