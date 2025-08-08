@@ -14,4 +14,3 @@ script = ExtResource("2")
 shape = SubResource("1")
 
 [node name="StackedSprite" parent="." instance=ExtResource("1")]
-texture_filter = 1

@@ -32,10 +32,19 @@ func _ready():
 
 func render_sprites():
 	clear_sprites()
-	for i in range(0, hframes):
-		var next_sprite = Sprite2D.new()
-		next_sprite.texture = texture
-		next_sprite.hframes = hframes
-		next_sprite.frame = i
-		next_sprite.position.y = -i
-		add_child(next_sprite)
+	if hframes > 1:
+		for i in range(0, hframes):
+			var next_sprite = Sprite2D.new()
+			next_sprite.texture = texture
+			next_sprite.hframes = hframes
+			next_sprite.frame = i
+			next_sprite.position.y = -i
+			add_child(next_sprite)
+	elif vframes > 1:
+		for i in range(0, vframes):
+			var next_sprite = Sprite2D.new()
+			next_sprite.texture = texture
+			next_sprite.vframes = vframes
+			next_sprite.frame = i
+			next_sprite.position.y = -i
+			add_child(next_sprite)

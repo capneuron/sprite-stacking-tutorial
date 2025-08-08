@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://bkdmpjlnk4q7u"]
 
-[ext_resource type="Texture2D" uid="uid://7ngfcd880aig" path="res://CarSlices.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bcs5eisjc4cki" path="res://cars-1.png" id="1_i5fsr"]
 [ext_resource type="Script" uid="uid://b6cfu571kkeph" path="res://StackedSprite.gd" id="2"]
 
 [node name="StackedSprite" type="Sprite2D"]
 self_modulate = Color(1, 1, 1, 0)
-texture = ExtResource("1")
-hframes = 11
-frame = 5
+texture_filter = 1
+texture = ExtResource("1_i5fsr")
+vframes = 14
 script = ExtResource("2")
 show_sprites = true
